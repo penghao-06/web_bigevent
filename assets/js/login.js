@@ -81,7 +81,7 @@ $(function () {
             data: $(this).serialize(),
             success: function (backData) {
                 if (backData.status !== 0) {
-                    return alert('登录失败')
+                    return layui.layer.msg('登录失败')
                 }
                 localStorage.setItem('token', backData.token)
                 location.href = "/index.html"
