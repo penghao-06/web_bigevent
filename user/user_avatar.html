@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>更换用户头像</title>
+    <!--引入layui文件 -->
+    <link rel="stylesheet" href="../assets/lib/layui/css/layui.css">
+    <!-- 引入裁剪图片的css文件样式 -->
+    <link rel="stylesheet" href="../assets/lib/cropper/cropper.css">
+    <!-- 引入user_info的css文件 -->
+    <link rel="stylesheet" href="../assets/css/user/user_avatar.css">
+
+</head>
+
+<body>
+    <div class="layui-card">
+        <div class="layui-card-header">更换用户头像</div>
+        <div class="layui-card-body">
+            <!-- 第一行的图片裁剪和预览区域 -->
+            <div class="row1">
+                <!-- 图片裁剪区域 -->
+                <div class="cropper-box">
+                    <!-- 这个 img 标签很重要，将来会把它初始化为裁剪区域 -->
+                    <img id="image" src="../assets/images/sample.jpg" />
+                </div>
+                <!-- 图片的预览区域 -->
+                <div class="preview-box">
+                    <div>
+                        <!-- 宽高为 100px 的预览区域 -->
+                        <div class="img-preview w100"></div>
+                        <p class="size">100 x 100</p>
+                    </div>
+                    <div>
+                        <!-- 宽高为 50px 的预览区域 -->
+                        <div class="img-preview w50"></div>
+                        <p class="size">50 x 50</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 按钮区域 -->
+            <div class="row2">
+                <button type="button" class="layui-btn" id="UploadBtn">上传</button>
+                <button type="button" class="layui-btn layui-btn-danger" id="btnSure">确定</button>
+            </div>
+        </div>
+    </div>
+    <!-- es6中的accept指定上传的模式图片的类型是什么类型的  -->
+    <input type="file" id="file" accept="image/gif,image/jpeg,image/jpeg,image/png">
+    <!-- 引入jq文件 -->
+    <script src="../assets/lib/jquery.js"></script>
+    <!-- 引入参加图片的js文件 -->
+    <script src="../assets/lib/cropper/Cropper.js"></script>
+    <script src="../assets/lib/cropper/jquery-cropper.js"></script>
+    <!-- 引入layui的js的文件 -->
+    <script src="../assets/lib/layui/layui.all.js"></script>
+    <!-- 引入baseApi请求设置 -->
+    <script src="../assets/js/baseAPI.js"></script>
+    <!-- 引入user_info的js文件 -->
+    <script src="..//assets/js/user/user_avatar.js"></script>
+</body>
+
+</html>
