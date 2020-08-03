@@ -1,0 +1,54 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 15px;
+    background-color: #f2f3f5;
+}
+
+.w100 {
+    width: 200px !important;
+    height: 140px !important;
+    margin-top: 10px;
+    background-color: #ffffff;
+    overflow: hidden;
+    opacity: .5;
+}
+
+.row1 {
+    display: flex;
+}
+
+.cropper-box {
+    width: 400px;
+    height: 280px;
+    overflow: hidden;
+    margin-right: 40px;
+}
+
+.content-box {
+    margin-bottom: 30px;
+}
+
+.preview-box {
+    /* flex: 1; */
+    /* display: flex;
+    flex-direction: column; */
+    margin-left: 40px;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    text-align: center;
+}
+
+.preview-box .layui-btn-danger {
+    position: relative;
+    top: 50px;
+    width: 150px;
+}
+
+#file {
+    display: none;
+}
